@@ -3,6 +3,21 @@
   padding-left: 0.5rem;
 }
 
+/* Tags */
+a:hover {
+  color: steelblue;
+  cursor: pointer;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:active {
+  color: red;
+}
+
+/* Classes */
 .Title {
   text-align: center;
   font-size: 40px;
@@ -23,10 +38,20 @@
   background-color: papayawhip;
 }
 
-li {
+.CustomNav li {
   color: blue;
 }
 
+.QueriesList {
+  color: black;
+  font-family: "Courier New";
+  font-weight: bolder;
+  padding-top: 0.5rem;
+  margin-left: 1.5rem;
+  list-style-position: inside;
+}
+
+/* IDs */
 #TitleQuick {
   text-decoration: underline;
   font-family: "Courier New";
@@ -37,36 +62,12 @@ li {
   /* margin-top: 1.5rem; */
 }
 
-div {
+#QuickLinksBox {
   /* padding-top:1.5rem; */
   padding-left: 0rem;
   margin-left: 0.5rem;
   border: 2px solid rgb(243, 9, 9);
   margin-right: 1.5rem;
   border-radius: 20px;
-
   color: black;
-}
-
-a:hover {
-  color: steelblue;
-  cursor: pointer;
-}
-a:visited {
-  color: purple;
-}
-a:active {
-  color: red;
-}
-
-ol li {
-  color: black;
-}
-ol {
-  color: black;
-  font-family: "Courier New";
-  font-weight: bolder;
-  padding-top: 0.5rem;
-  margin-left: 1.5rem;
-  list-style-position: inside;
 }
