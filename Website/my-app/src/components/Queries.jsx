@@ -1,6 +1,6 @@
 import React from "react";
 
-function Query(props) {
+function Queries(props) {
   return (
     <div class="Query">
       <h2 class="QueryTitle">Query 1</h2>
@@ -34,4 +34,4 @@ function Query(props) {
   );
 }
 
-export default Query;
+export default Queries;

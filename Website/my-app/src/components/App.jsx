@@ -2,13 +2,13 @@ import React from "react";
 import "../styles.css";
 // Importing Components
 import Headers from "./Headers";
-import Query from "./Query";
+import Queries from "./Queries";
 
 function App() {
   return (
     <div className="App">
       <Headers />
-      <Query />
+      <Queries />
     </div>
   );
 }
