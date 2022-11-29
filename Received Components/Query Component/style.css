@@ -1,43 +1,38 @@
-* {
-    margin: 0;
-    padding-block: 0;
-}
-body {
-    padding-inline: 0.25rem;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: papayawhip;
-}
-h2{
-    font-weight: bolder;
-    color: blueviolet;
-    text-decoration: 3px underline;
-}
-h4 {
-    font-weight: bold;
-    color: rgba(104, 10, 192, 0.589);
+/** Classes */
+.Query {
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 0.25rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: papayawhip;
 }
 
-img {
-    box-sizing: border-box;
-    border: 2px solid black;
-    height: 200px;
-}
-figcaption {
-    font-weight: bold;
-}
-.center {
-    text-align: center;
+.QueryTitle {
+  font-weight: bolder;
+  color: blueviolet;
+  text-decoration: 3px underline;
 }
 
-section {
-    /* border: 3px solid black; */
-    padding: 0.5rem;
-    margin-block-start: 0.25rem;
-    margin-bottom: 1rem;
-    border-radius: 20px;
+.QueryStatement {
+  font-weight: bold;
+  color: rgba(104, 10, 192, 0.589);
 }
 
-hr {
-    border-top: 2px dashed black;
+.QueryImage {
+  box-sizing: border-box;
+  border: 2px solid black;
+  height: 200px;
+}
+
+.Caption {
+  font-weight: bold;
+}
+
+.Center {
+  text-align: center;
+}
+
+.Line {
+  border-top: 2px dashed black;
 }
