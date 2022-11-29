@@ -2,7 +2,9 @@
 /*? Tags */
 * {
   font-size: 1rem;
-  margin-left: 0.3rem;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 a:visited {
