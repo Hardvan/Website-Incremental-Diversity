@@ -1,6 +1,8 @@
 import React from "react";
+import getQueries from "../query";
 
 function Queries(props) {
+  //TODO: Run a for loop to display query by passing props to Query.jsx
   return (
     <div class="Query">
       <h2 class="QueryTitle">Query 1</h2>
