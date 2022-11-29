@@ -3,7 +3,7 @@ import getQueries from "../query";
 import Query from "./Query";
 
 function Queries() {
-  // Running a for loop to display query by passing props to Query.jsx
+  // Getting array of query objects from query.js
   const queries = getQueries();
   // Converting the array of query objects into an array of JSX elements
   const queryList = queries.map((query) => (
