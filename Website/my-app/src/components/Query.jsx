@@ -1,5 +1,6 @@
 import React from "react";
 
+// Component for a single Query
 function Query(props) {
   return (
     <div class="Query">
