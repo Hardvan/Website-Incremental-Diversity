@@ -6,7 +6,11 @@ function QuickLinks() {
   return (
     <main id="quicklinks">
       <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
+        <Dropdown.Toggle
+          variant="success"
+          id="dropdown-basic"
+          className="QuickLinksButton"
+        >
           Quick Links Button
         </Dropdown.Toggle>
 
