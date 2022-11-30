@@ -121,3 +121,27 @@ a:active {
 .Line {
   border-top: 2px dashed black;
 }
+
+/** Styling for About */
+/*? Classes */
+.AboutTitle {
+  font-weight: bolder;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 0vmax;
+}
+
+.NamesList {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+/*? IDs */
+#about {
+  border: 2px solid black;
+  padding-left: 0.5rem;
+  background-image: linear-gradient(pink, peachpuff);
+  color: black;
+  font-weight: bold;
+  text-shadow: black;
+}
