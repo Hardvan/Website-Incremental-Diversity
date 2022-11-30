@@ -9,7 +9,7 @@ function DropdownItems() {
   // Creating the dropdown items from the queries
   const itemList = queries.map((query) => {
     return (
-      <Dropdown.Item href={`#query-${query.id}`}>
+      <Dropdown.Item href={`#query${query.id}`}>
         {`Query ${query.id}`}
       </Dropdown.Item>
     );

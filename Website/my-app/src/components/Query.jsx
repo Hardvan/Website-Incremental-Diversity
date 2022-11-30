@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 // Component for a single Query
 function Query(props) {
   return (
-    <Card style={{ width: "50rem" }} className="CenterCard">
+    <Card id={props.id} style={{ width: "50rem" }} className="CenterCard">
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">

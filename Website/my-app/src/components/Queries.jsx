@@ -11,6 +11,7 @@ function Queries() {
   const queryList = queries.map((query) => (
     <Query
       key={query.id}
+      id={`query${query.id}`}
       title={query.title}
       statement={query.statement}
       image={query.image}

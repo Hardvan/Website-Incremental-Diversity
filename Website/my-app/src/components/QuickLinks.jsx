@@ -4,7 +4,7 @@ import DropdownItems from "./DropdownItems";
 
 function QuickLinks() {
   return (
-    <main>
+    <main id="quicklinks">
       <Dropdown>
         <Dropdown.Toggle variant="success" id="dropdown-basic">
           Quick Links Button

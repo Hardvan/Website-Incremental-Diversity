@@ -5,19 +5,16 @@ import Navbar from "react-bootstrap/Navbar";
 
 function TitleNavBar() {
   return (
-    <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Incremental Diversity</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#quicklinks">Quick Links</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-      <br />
-    </>
+    <Navbar id="home" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">Incremental Diversity</Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#quicklinks">Quick Links</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
   );
 }
 
