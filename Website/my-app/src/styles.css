@@ -145,3 +145,13 @@ a:active {
   font-weight: bold;
   text-shadow: black;
 }
+
+/** Styling for Footer */
+/*? Classes */
+.Footer {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
