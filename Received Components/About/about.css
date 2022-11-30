@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    padding:0rem;
+    margin: 0rem;
+}
+
+body{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-weight: sans-serif;
+    font-size: 1rem;
+}
+
+h2{
+    font-weight: bolder;
+    color: red;
+    text-transform: uppercase;
+    text-shadow:0vmax;
+}
+
+#about{
+    border: 2px solid black;
+    padding-left: 0.5rem;
+    margin-right: 2rem;
+    background-image: linear-gradient(pink,peachpuff);
+    color:black;
+    font-weight:bold;
+    text-shadow: black;
+}
+.list{
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+#copyright{
+    text-align: center;
+}
+
