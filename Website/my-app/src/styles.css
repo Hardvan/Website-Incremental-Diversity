@@ -117,24 +117,15 @@ a:active {
 /*? Classes */
 .AboutTitle {
   font-weight: bolder;
-  color: red;
   text-transform: uppercase;
   text-shadow: 0vmax;
-}
-
-.NamesList {
-  list-style-type: square;
-  list-style-position: inside;
+  font-family: "Secular One", sans-serif;
 }
 
 /*? IDs */
 #about {
-  border: 2px solid black;
-  padding-left: 0.5rem;
-  background-image: linear-gradient(pink, peachpuff);
-  color: black;
-  font-weight: bold;
-  text-shadow: black;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 /** Styling for Footer */
