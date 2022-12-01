@@ -4,7 +4,7 @@ import DropdownItems from "./DropdownItems";
 
 function QuickLinks() {
   return (
-    <main id="quicklinks">
+    <div id="quicklinks">
       <Dropdown>
         <Dropdown.Toggle
           variant="success"
@@ -18,7 +18,7 @@ function QuickLinks() {
           <DropdownItems />
         </Dropdown.Menu>
       </Dropdown>
-    </main>
+    </div>
   );
 }
 
