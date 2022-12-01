@@ -5,7 +5,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 function About() {
   return (
     <Accordion id="about" defaultActiveKey="0">
-      <h2 class="SectionTitle">About</h2>
+      <h2 className="SectionTitle">About</h2>
       <Accordion.Item eventKey="0">
         <Accordion.Header>Team Members</Accordion.Header>
         <Accordion.Body>

@@ -115,6 +115,11 @@ code {
   word-wrap: break-word;
 }
 
+/*? ID */
+#QueriesTitle {
+  margin-left: 18.2%;
+}
+
 /*? Classes */
 .CenterCard {
   margin: 0 auto;

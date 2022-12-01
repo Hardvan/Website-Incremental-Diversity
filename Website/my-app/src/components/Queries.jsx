@@ -22,7 +22,14 @@ function Queries() {
     />
   ));
 
-  return queryList;
+  return (
+    <div>
+      <h2 className="SectionTitle" id="QueriesTitle">
+        Queries
+      </h2>
+      {queryList}
+    </div>
+  );
 }
 
 export default Queries;
