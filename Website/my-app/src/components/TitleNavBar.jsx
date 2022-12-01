@@ -7,7 +7,9 @@ function TitleNavBar() {
   return (
     <Navbar sticky="top" id="navbar" bg="dark" variant="dark">
       <Container className="CustomNavbar">
-        <Navbar.Brand href="#home">Incremental Diversity</Navbar.Brand>
+        <Navbar.Brand href="#home" className="NavbarBrand">
+          Incremental Diversity
+        </Navbar.Brand>
         <Nav className="ml-auto">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#quicklinks">Quick Links</Nav.Link>
