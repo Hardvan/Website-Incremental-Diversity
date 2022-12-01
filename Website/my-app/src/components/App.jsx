@@ -6,11 +6,13 @@ import QuickLinks from "./QuickLinks";
 import Queries from "./Queries";
 import About from "./About";
 import Footer from "./Footer";
+import DatasetDescription from "./DatasetDescription";
 
 function App() {
   return (
     <div className="App" id="home">
       <TitleNavBar />
+      <DatasetDescription />
       <QuickLinks />
       <Queries />
       <About />
