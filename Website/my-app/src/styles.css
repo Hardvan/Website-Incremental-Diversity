@@ -161,7 +161,7 @@ code {
 
 /** Styling for About */
 /*? Classes */
-.AboutTitle {
+.SectionTitle {
   font-weight: bolder;
   text-transform: uppercase;
   text-shadow: 0vmax;
@@ -187,4 +187,10 @@ code {
 /** Styling for Carousel */
 /*? Classes */
 .CustomCarousel {
+  width: 75%;
+  /* Center */
+  margin: 0 auto;
+  margin-top: 20px;
+  float: none;
+  margin-bottom: 10px;
 }
