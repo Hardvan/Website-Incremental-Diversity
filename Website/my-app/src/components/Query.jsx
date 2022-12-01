@@ -11,7 +11,7 @@ function Query(props) {
         <Card.Subtitle className="mb-2 text-muted">
           Query Statement
         </Card.Subtitle>
-        <strong>{props.statement}</strong>
+        <code>{props.statement}</code>
         <div class="Image Center">
           <img class="QueryImage" src={props.image} alt="Query" />
           <figcaption class="Caption">{props.caption}</figcaption>
