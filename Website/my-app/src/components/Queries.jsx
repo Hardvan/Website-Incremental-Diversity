@@ -12,11 +12,13 @@ function Queries() {
     <Query
       key={query.id}
       id={`query${query.id}`}
+      slno={query.id}
       title={query.title}
       statement={query.statement}
       image={query.image}
       caption={query.caption}
       explanation={query.explanation}
+      link={query.link}
     />
   ));
 

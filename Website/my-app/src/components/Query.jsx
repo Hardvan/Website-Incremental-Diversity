@@ -4,12 +4,15 @@ import Button from "react-bootstrap/Button";
 
 // Component for a single Query
 function Query(props) {
+  const dataset_link =
+    "https://storage.googleapis.com/incremental_diversity_dataset/masked_microdata_Records_1000_k_3.csv";
+
   return (
     <Card id={props.id} style={{ width: "50rem" }} className="CenterCard">
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
-          Query Statement
+          Query {props.slno}
         </Card.Subtitle>
         <code>{props.statement}</code>
         <div class="Image Center">
@@ -17,8 +20,12 @@ function Query(props) {
           <figcaption class="Caption">{props.caption}</figcaption>
         </div>
         <Card.Text>{props.explanation}</Card.Text>
-        <Button variant="dark">Query</Button>{" "}
-        <Button variant="success">Dataset</Button>
+        <Button variant="dark" href={props.link}>
+          Query
+        </Button>{" "}
+        <Button variant="success" href={dataset_link}>
+          Dataset
+        </Button>
       </Card.Body>
     </Card>
   );
