@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles.css";
 // Importing Components
+import TitleNavBar from "./TitleNavBar";
+import QuickLinks from "./QuickLinks";
 import Queries from "./Queries";
 import About from "./About";
 import Footer from "./Footer";
-import TitleNavBar from "./TitleNavBar";
-import QuickLinks from "./QuickLinks";
 
 function App() {
   return (
