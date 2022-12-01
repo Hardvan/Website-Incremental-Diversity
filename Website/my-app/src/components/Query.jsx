@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 // Component for a single Query
 function Query(props) {
@@ -16,8 +17,8 @@ function Query(props) {
           <figcaption class="Caption">{props.caption}</figcaption>
         </div>
         <Card.Text>{props.explanation}</Card.Text>
-        <Card.Link href="#">Query Link</Card.Link>
-        <Card.Link href="#">Dataset Link</Card.Link>
+        <Button variant="dark">Query</Button>{" "}
+        <Button variant="success">Dataset</Button>
       </Card.Body>
     </Card>
   );
