@@ -12,6 +12,7 @@ function TitleNavBar() {
         </Navbar.Brand>
         <Nav className="ml-auto">
           <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#dataset">Dataset</Nav.Link>
           <Nav.Link href="#quicklinks">Quick Links</Nav.Link>
           <Nav.Link href="#about">About</Nav.Link>
         </Nav>

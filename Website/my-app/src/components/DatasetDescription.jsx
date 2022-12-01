@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 function DatasetDescription() {
   return (
-    <div className="CustomCarousel">
+    <div className="CustomCarousel" id="dataset">
       <h2 className="SectionTitle">Dataset Description</h2>
       <Carousel>
         <Carousel.Item interval={1000}>
