@@ -9,7 +9,7 @@ import QuickLinks from "./QuickLinks";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="home">
       <TitleNavBar />
       <QuickLinks />
       <Queries />

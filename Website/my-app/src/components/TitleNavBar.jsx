@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 function TitleNavBar() {
   return (
-    <Navbar id="home" bg="dark" variant="dark">
+    <Navbar sticky="top" id="navbar" bg="dark" variant="dark">
       <Container className="CustomNavbar">
         <Navbar.Brand href="#home">Incremental Diversity</Navbar.Brand>
         <Nav className="ml-auto">
