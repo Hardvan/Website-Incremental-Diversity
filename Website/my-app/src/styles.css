@@ -64,6 +64,8 @@ a:active {
 /*? Classes */
 .App {
   font-family: sans-serif;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 .Title {
