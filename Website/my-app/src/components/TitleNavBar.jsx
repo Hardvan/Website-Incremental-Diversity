@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import QuickLinks from "./QuickLinks";
 
 function TitleNavBar() {
   return (
@@ -11,10 +12,16 @@ function TitleNavBar() {
           Incremental Diversity
         </Navbar.Brand>
         <Nav className="ml-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#dataset">Dataset</Nav.Link>
-          <Nav.Link href="#quicklinks">Quick Links</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link className="NavLink" href="#home">
+            Home
+          </Nav.Link>
+          <Nav.Link className="NavLink" href="#dataset">
+            Dataset
+          </Nav.Link>
+          <Nav.Link className="NavLink" href="#about">
+            About
+          </Nav.Link>
+          <QuickLinks />
         </Nav>
       </Container>
     </Navbar>

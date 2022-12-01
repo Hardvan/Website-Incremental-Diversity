@@ -11,7 +11,7 @@ function QuickLinks() {
           id="dropdown-basic"
           className="QuickLinksButton"
         >
-          Quick Links Button
+          Quick Links
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
