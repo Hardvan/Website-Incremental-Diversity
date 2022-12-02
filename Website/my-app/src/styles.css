@@ -1,5 +1,4 @@
-/** Styling for Heading, NavBar, Quick Links  */
-/*? Tags */
+/*? Whole Webpage */
 * {
   font-size: 1rem;
   margin: 0px;
@@ -7,6 +6,18 @@
   box-sizing: border-box;
 }
 
+.App {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+/** Styling for Navbar */
+.CustomNavbar {
+  font-family: "Merriweather", serif;
+}
+
+/* Link underline hover effect */
 .CustomNavbar a {
   text-decoration: none;
   background: linear-gradient(
@@ -25,61 +36,11 @@
   background-repeat: no-repeat;
   transition: background-size 420ms;
 }
-
 .CustomNavbar a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
-/* a:visited {
-  color: purple;
-}
-
-a:hover {
-  color: steelblue;
-  cursor: pointer;
-}
-
-a:active {
-  color: red;
-} */
-
-/*? IDs */
-#TitleQuick {
-  text-decoration: underline;
-  font-weight: bold;
-  color: goldenrod;
-  box-sizing: border-box;
-  padding-top: 1.5rem;
-  /* margin-top: 1.5rem; */
-}
-
-#quicklinks {
-  /* padding-top: 3.5rem; */
-  /* padding-bottom: 7rem; */
-  /* Center */
-  /* display: flex; */
-  /* justify-content: center; */
-  padding-left: 2rem;
-}
-
-/*? Classes */
-.App {
-  font-family: sans-serif;
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-}
-
-.Title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: red;
-}
-
-.CustomNavbar {
-  font-family: "Merriweather", serif;
-}
-
+/* Title */
 .NavbarBrand {
   font-size: 1.5rem;
   font-weight: 900;
@@ -90,21 +51,35 @@ a:active {
   margin-right: 0.5rem;
 }
 
-.QuickLinksButton {
+/** Styling for Quick Links */
+#quicklinks {
+  margin-left: 2rem;
   font-family: "Secular One", sans-serif;
 }
 
-.QueriesList {
-  color: black;
-  font-weight: bolder;
-  padding-top: 0.5rem;
-  margin-left: 0.5rem;
-  list-style-position: inside;
+/** Styling for Carousel */
+.CustomCarousel {
+  width: 75%;
+  /* Center */
+  margin: 0 auto;
+  margin-top: 20px;
+  float: none;
+  margin-bottom: 10px;
 }
 
 /** Styling for Query */
-/*? Tags */
-code {
+#QueriesTitle {
+  margin-left: 18.2%;
+  margin-top: 4rem;
+}
+
+.CenterCard {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 20px;
+}
+
+.Code {
   background: #f4f4f4;
   border: 1px solid #ddd;
   border-left: 3px solid rgb(36, 127, 219);
@@ -121,60 +96,26 @@ code {
   word-wrap: break-word;
 }
 
-/*? ID */
-#QueriesTitle {
-  margin-left: 18.2%;
-  margin-top: 4rem;
-}
-
-/*? Classes */
-.CenterCard {
-  margin: 0 auto;
-  float: none;
-  margin-bottom: 10px;
-}
-
-.Query {
-  margin: 0;
-  margin-top: 1rem;
-  padding-block: 0;
-  padding-inline: 0.25rem;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: papayawhip;
-}
-
-.QueryTitle {
-  font-weight: bolder;
-  color: blueviolet;
-  text-decoration: 3px underline;
-}
-
-.QueryStatement {
-  font-weight: bold;
-  color: rgba(104, 10, 192, 0.589);
-}
-
-.QueryImage {
-  box-sizing: border-box;
-  border: 2px solid black;
-  height: 200px;
-}
-
-.Caption {
-  font-weight: bold;
-}
-
-.Center {
+.ImageDiv {
   text-align: center;
 }
-
-.Line {
-  border-top: 2px dashed black;
+.ImageDiv img {
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: 200px;
+}
+.ImageDiv figcaption {
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 /** Styling for About */
-/*? Classes */
+#about {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 4rem;
+}
+
 .SectionTitle {
   font-weight: bolder;
   text-transform: uppercase;
@@ -182,30 +123,11 @@ code {
   font-family: "Secular One", sans-serif;
 }
 
-/*? IDs */
-#about {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-top: 4rem;
-}
-
 /** Styling for Footer */
-/*? Classes */
 .Footer {
   text-align: center;
   font-weight: bold;
   color: black;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-/** Styling for Carousel */
-/*? Classes */
-.CustomCarousel {
-  width: 75%;
-  /* Center */
-  margin: 0 auto;
-  margin-top: 20px;
-  float: none;
-  margin-bottom: 10px;
 }

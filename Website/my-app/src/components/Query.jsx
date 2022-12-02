@@ -14,10 +14,10 @@ function Query(props) {
         <Card.Subtitle className="mb-2 text-muted">
           Query {props.slno}
         </Card.Subtitle>
-        <code>{props.statement}</code>
-        <div class="Image Center">
-          <img class="QueryImage" src={props.image} alt="Query" />
-          <figcaption class="Caption">{props.caption}</figcaption>
+        <code className="Code">{props.statement}</code>
+        <div className="ImageDiv">
+          <img src={props.image} alt="Query" />
+          <figcaption>{props.caption}</figcaption>
         </div>
         <Card.Text>{props.explanation}</Card.Text>
         <Button variant="dark" href={props.link}>
@@ -32,22 +32,3 @@ function Query(props) {
 }
 
 export default Query;
-
-// Old Query code:
-// function Query(props) {
-//   return (
-//     <div class="Query">
-//       <h2 class="QueryTitle">{props.title}</h2>
-//       <div class="QueryDescription">
-//         <h4 class="QueryStatement">Query Statement :</h4>
-//         <strong>{props.statement}</strong>
-//         <div class="Image Center">
-//           <img class="QueryImage" src={props.image} alt="Query" />
-//           <figcaption class="Caption">{props.caption}</figcaption>
-//         </div>
-//       </div>
-//       <p class="Explanation">{props.explanation}</p>
-//       <hr class="Line" />
-//     </div>
-//   );
-// }

@@ -6,7 +6,7 @@ function DatasetDescription() {
     <div className="CustomCarousel" id="dataset">
       <h2 className="SectionTitle">Dataset Description</h2>
       <Carousel>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
             src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
@@ -17,7 +17,7 @@ function DatasetDescription() {
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
             src="https://images.cloudflareapps.com/EJzyxsCCQOeRa71a83tX_background-2.jpeg"
@@ -28,7 +28,7 @@ function DatasetDescription() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
             src="https://images6.alphacoders.com/420/420903.jpg"
