@@ -12,6 +12,12 @@
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
+.SectionTitle {
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-family: "Secular One", sans-serif;
+}
+
 /** Styling for Navbar */
 .CustomNavbar {
   font-family: "Merriweather", serif;
@@ -101,8 +107,7 @@
 }
 .ImageDiv img {
   box-sizing: border-box;
-  border: 2px solid black;
-  width: 200px;
+  width: 720px;
 }
 .ImageDiv figcaption {
   font-weight: bold;
@@ -114,13 +119,6 @@
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 4rem;
-}
-
-.SectionTitle {
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-shadow: 0vmax;
-  font-family: "Secular One", sans-serif;
 }
 
 /** Styling for Footer */

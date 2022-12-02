@@ -19,7 +19,7 @@ function Query(props) {
           <img src={props.image} alt="Query" />
           <figcaption>{props.caption}</figcaption>
         </div>
-        <Card.Text>{props.explanation}</Card.Text>
+        <Card.Text align="justify">{props.explanation}</Card.Text>
         <Button variant="dark" href={props.link}>
           Query
         </Button>{" "}
