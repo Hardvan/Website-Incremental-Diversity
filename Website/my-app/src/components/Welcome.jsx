@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-function DatasetDescription() {
+function Welcome() {
   return (
-    <div className="CustomCarousel" id="dataset">
-      <h2 className="SectionTitle">Dataset Description</h2>
+    <div className="CustomCarousel" id="welcome">
+      <h2 className="SectionTitle">Welcome</h2>
       <Carousel>
         {/* First Slide */}
         <Carousel.Item interval={4200}>
@@ -57,4 +57,4 @@ function DatasetDescription() {
   );
 }
 
-export default DatasetDescription;
+export default Welcome;

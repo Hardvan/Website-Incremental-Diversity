@@ -5,13 +5,13 @@ import TitleNavBar from "./TitleNavBar";
 import Queries from "./Queries";
 import About from "./About";
 import Footer from "./Footer";
-import DatasetDescription from "./DatasetDescription";
+import Welcome from "./Welcome";
 
 function App() {
   return (
     <div className="App" id="home">
       <TitleNavBar />
-      <DatasetDescription />
+      <Welcome />
       <Queries />
       <About />
       <Footer />
