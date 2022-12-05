@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Dataset Description</h2>
+    <div class="First">
+      <figure class="security">
+        <img src="security-g0957a8cc6_1920.jpg" alt="Data privacy" />
+        <figcaption>&nbsp; Data privacy</figcaption>
+      </figure>
+      <p class="Introduction">
+        Anonymization plays an important role in privacy preserving data
+        publishing. In this process of anonymizing the data, a sensitive data
+        should not be revealed or linked to the identifier data. While
+        publishing data, utmost care should be taken that the data should be
+        published in such a manner that it ensures privacy, but here a problem
+        arises that if the data is published in highly hidden way, the
+        researchers who need data for doing their research cannot get much
+        information from this data as some of its contents would be hidden. So,
+        our aim is to publish data by keeping in balance the privacy and its
+        usefulness for researchers in their research by analysation of the data.
+      </p>
+    </div>
+
+    <div class="Second">
+      <figure class="Original_Dataset">
+        <img src="" alt="" />
+        <figcaption>&nbsp; Microdata Table</figcaption>
+      </figure>
+      <p class="Dataset">
+        The Incremental Diversity is obtained by choosing right sensitive
+        attributes to produce Masked Microdata Table with lesser number of
+        residue records for a given value of K and lesser time complexity.A
+        microdata table is basically a raw data obtained from any survey or
+        census (for example: details of all students in a class).A Masked
+        Microdata Table is nothing but the table obtained from applying various
+        anonymity techniques in order bring the efficient model to protect the
+        privacy of the data. Disease as Primary, Education as Secondary,
+        Employment as Tertiary and Race as Quaternary Sensitive Attributes are
+        taken under consideration to obtain efficient Incremental Diversity.
+        Sensitive Attributes are the attributes which an individual wants to
+        maintain a secret or private. Here Age, Gender, Zip Code is considered
+        as Quasi-Identifiers. Quasi-Identifier is an attribute which in
+        combination with other attributes can identify an individual uniquely.
+        Masked Table is formed by masking and sorting of sensitive attributes
+        into various Equivalence Class from Microdata Table. An Equivalence
+        Class is a table of records consisting of sensitive attributes and
+        quasi-identifier attributes obtained from a microdata table, i.e., it is
+        basically a subclass obtained from microdata table. Masking is a process
+        to create a face but realistic version of organised sensitive data of an
+        individual.
+      </p>
+    </div>
+
+    <div class="third">
+      <figure class="anonymised_Table">
+        <img
+          src="Screenshot 580.png"
+          alt="excel image"
+          width="350"
+          height="350"
+        />
+        <figcaption>Masked Microdata Table</figcaption>
+      </figure>
+      <p class="Masked_Dataset">
+        The anonymity should be performed on the above discussed dataset. The
+        output of our project contains various anonymity techniques like
+        k-anonymity, l- diversity, anatomy, l-e diversity etc. The issue with
+        the following papers was that it was either lacking the multiple
+        sensitive attribute or loss of information. According to k-Anonymity
+        model it should be noted that the at least k number of records should be
+        indistinguishable from other records. This model restricts the
+        discussion to single sensitive attribute. Keeping k-Anonymity model in
+        mind l-m-d anonymity was introduced in our project for anonymizing the
+        microdata table of multiple sensitive attributes by grouping the
+        microdata table into equivalence classes and generalizing the
+        Quasi-Sensitive Attribute. The most efficient model called anatomy was
+        implemented in our project. This model deals with the problem of
+        generalization by dividing the microdata table into the two tables
+        namely quasi-identifier table and the sensitive attribute table. The
+        <abbr title="Quasi-Identifier Table">QT</abbr>contains only
+        quasi-identifiers(engages) , whereas
+        <abbr title="Sensitive-Attribute Table ">ST</abbr>contains only
+        sensitive attributes with their frequency of occurring (count). The
+        prominence of anatomy model is that it separates quasi-identifier
+        attributes and sensitive attribute leading to the loss of less amount of
+        considerable information. The process of anatomy was strong and
+        effective but there was a need for diversifying data. The next step was
+        to diversify the microdata table. The first step is to look for the
+        sensitive attribute group for higher number of sensitive values (it is
+        defined by the user). The sensitive attribute containing higher number
+        of sensitive values (values with high sensitivity) is considered as
+        primary sensitive attribute. If in case the sensitive values are same
+        for both attribute then the one with more unique value is considered as
+        primary sensitive attribute. Finally, the task was to calculate the
+        diversity index for the anonymized table. The degree of diversity is
+        calculated using the formula (No. of unique records/total no. of
+        records). The aim of our project is to inculcate all the mentioned above
+        models and come out with the efficient algorithm called "Incremental
+        Diversity".The success of our work is that it outstands other researches
+        is that for the maximum number of records the amount of information loss
+        is very less .
+      </p>
+    </div>
+  </body>
+</html>
