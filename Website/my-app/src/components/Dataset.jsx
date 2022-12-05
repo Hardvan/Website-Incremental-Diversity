@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 function Dataset() {
   return (
@@ -25,8 +26,12 @@ function Dataset() {
             microdata table is basically a raw data obtained from any survey or
             census (for example: details of all students in a class).
           </Card.Text>
-          <Card.Link href="#">Card Link</Card.Link>
-          <Card.Link href="#">Another Link</Card.Link>
+          <Button
+            variant="success"
+            href="https://storage.googleapis.com/incremental_diversity_dataset/original_microdata_Records_1000_k_3.csv"
+          >
+            Dataset
+          </Button>
         </Card.Body>
 
         {/* Masked Dataset */}
@@ -56,8 +61,12 @@ function Dataset() {
             microdata table. Masking is a process to create a face but realistic
             version of organised sensitive data of an individual.
           </Card.Text>
-          <Card.Link href="#">Card Link</Card.Link>
-          <Card.Link href="#">Another Link</Card.Link>
+          <Button
+            variant="success"
+            href="https://storage.googleapis.com/incremental_diversity_dataset/masked_microdata_Records_1000_k_3.csv"
+          >
+            Dataset
+          </Button>
         </Card.Body>
       </Card>
     </div>
