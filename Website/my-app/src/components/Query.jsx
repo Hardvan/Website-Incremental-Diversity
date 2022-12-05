@@ -10,7 +10,7 @@ function Query(props) {
   return (
     <Card id={props.id} style={{ width: "75%" }} className="CenterCard">
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title className="CardTitle">{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
           Query {props.slno}
         </Card.Subtitle>
@@ -19,11 +19,13 @@ function Query(props) {
           <img src={props.image} alt="Query" />
           <figcaption>{props.caption}</figcaption>
         </div>
-        <Card.Text align="justify">{props.explanation}</Card.Text>
-        <Button variant="dark" href={props.link}>
+        <Card.Text align="justify" className="CardText">
+          {props.explanation}
+        </Card.Text>
+        <Button variant="dark" href={props.link} className="CustomButton">
           Query
         </Button>{" "}
-        <Button variant="success" href={dataset_link}>
+        <Button variant="success" href={dataset_link} className="CustomButton">
           Dataset
         </Button>
       </Card.Body>

@@ -15,11 +15,11 @@ function Dataset() {
             <img src={require("../images/Original_Table.png")} alt="Query" />
             <figcaption>Original Microdata Table</figcaption>
           </div>
-          <Card.Title>Original Dataset</Card.Title>
+          <Card.Title className="CardTitle">Original Dataset</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
             1000 Records, 12 Attributes, 1 Added (Group ID)
           </Card.Subtitle>
-          <Card.Text align="justify">
+          <Card.Text align="justify" className="CardText">
             The Incremental Diversity is obtained by choosing right sensitive
             attributes to produce Masked Microdata Table with lesser number of
             residue records for a given value of K and lesser time complexity. A
@@ -29,6 +29,7 @@ function Dataset() {
           <Button
             variant="success"
             href="https://storage.googleapis.com/incremental_diversity_dataset/original_microdata_Records_1000_k_3.csv"
+            className="CustomButton"
           >
             Original Dataset
           </Button>
@@ -40,11 +41,11 @@ function Dataset() {
             <img src={require("../images/Masked_Table.png")} alt="Query" />
             <figcaption>Masked Microdata Table</figcaption>
           </div>
-          <Card.Title>Masked Dataset</Card.Title>
+          <Card.Title className="CardTitle">Masked Dataset</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
             Anatomy, k-anonymity (= 3), (l, e) diversity (= 1)
           </Card.Subtitle>
-          <Card.Text align="justify">
+          <Card.Text align="justify" className="CardText">
             A Masked Microdata Table is nothing but the table obtained from
             applying various anonymity techniques in order bring the efficient
             model to protect the privacy of the data. Disease as Primary,
@@ -64,6 +65,7 @@ function Dataset() {
           <Button
             variant="success"
             href="https://storage.googleapis.com/incremental_diversity_dataset/masked_microdata_Records_1000_k_3.csv"
+            className="CustomButton"
           >
             Masked Dataset
           </Button>

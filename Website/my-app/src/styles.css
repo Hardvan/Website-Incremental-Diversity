@@ -6,12 +6,14 @@
   box-sizing: border-box;
 }
 
+/*? App */
 .App {
   font-family: sans-serif;
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
+/*? Section Titles */
 .SectionTitle {
   font-weight: bolder;
   text-transform: uppercase;
@@ -26,6 +28,20 @@
 .SectionTitle:hover {
   box-shadow: inset 0 0 0 0 #54b3d6;
   color: black;
+}
+
+/*? React Cards */
+.CardTitle {
+  font-family: "Merriweather", serif;
+  font-size: 1.4rem;
+}
+
+.CardText {
+  font-family: "Poppins", sans-serif;
+}
+
+.CustomButton {
+  font-family: "Secular One", sans-serif;
 }
 
 /** Styling for Navbar */
@@ -136,6 +152,7 @@
   width: 720px;
 }
 .ImageDiv figcaption {
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: bold;
   margin-bottom: 1rem;
 }
