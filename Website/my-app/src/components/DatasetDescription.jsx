@@ -6,38 +6,49 @@ function DatasetDescription() {
     <div className="CustomCarousel" id="dataset">
       <h2 className="SectionTitle">Dataset Description</h2>
       <Carousel>
+        {/* First Slide */}
         <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
-            src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+            src={require("../images/Privacy.jpg")}
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Data privacy</h3>
+            <p>
+              Anonymization plays an important role in preserving privacy of the
+              data when published.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
+        {/* Second Slide */}
         <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
-            src="https://images.cloudflareapps.com/EJzyxsCCQOeRa71a83tX_background-2.jpeg"
+            src={require("../images/Researcher.png")}
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Researchers who need data</h3>
+            <p>
+              If the data is published in highly hidden way, research cannot be
+              conducted smoothly as some of the information in the dataset would
+              be hidden.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
+        {/* Third Slide */}
         <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
-            src="https://images6.alphacoders.com/420/420903.jpg"
+            src={require("../images/Balance.jpg")}
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Our Aim</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Publish data by meticulously balancing between privacy and
+              usefulness of the data for researchers for convenient analysis.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
