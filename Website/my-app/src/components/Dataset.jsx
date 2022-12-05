@@ -11,12 +11,12 @@ function Dataset() {
         {/* Original Dataset */}
         <Card.Body>
           <div className="ImageDiv">
-            <img src="" alt="Query" />
-            <figcaption></figcaption>
+            <img src={require("../images/Original_Table.png")} alt="Query" />
+            <figcaption>Original Microdata Table</figcaption>
           </div>
           <Card.Title>Original Dataset</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
-            Card Subtitle
+            12 Attributes, 1 Added (Group ID)
           </Card.Subtitle>
           <Card.Text align="justify">
             The Incremental Diversity is obtained by choosing right sensitive
@@ -32,8 +32,8 @@ function Dataset() {
         {/* Masked Dataset */}
         <Card.Body>
           <div className="ImageDiv">
-            <img src={require("../images/MaskedTable.png")} alt="Query" />
-            <figcaption></figcaption>
+            <img src={require("../images/Masked_Table.png")} alt="Query" />
+            <figcaption>Masked Microdata Table</figcaption>
           </div>
           <Card.Title>Masked Dataset</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
