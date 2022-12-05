@@ -40,6 +40,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+.CenterCard {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 20px;
+}
+
 .CustomButton {
   font-family: "Secular One", sans-serif;
 }
@@ -78,6 +84,7 @@
   font-weight: 900;
 }
 
+/* Spacing between Nav Links */
 .NavLink {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -127,12 +134,6 @@
 #QueriesTitle {
   margin-left: 12%;
   margin-top: 4rem;
-}
-
-.CenterCard {
-  margin: 0 auto;
-  float: none;
-  margin-bottom: 20px;
 }
 
 .Code {
