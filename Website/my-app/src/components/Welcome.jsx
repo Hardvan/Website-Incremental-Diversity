@@ -13,8 +13,8 @@ function Welcome() {
             src={require("../images/Privacy.jpg")}
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>Data privacy</h3>
+          <Carousel.Caption className="CarouselText">
+            <h3>Data Privacy</h3>
             <p>
               Anonymization plays an important role in preserving privacy of the
               data when published.
@@ -28,7 +28,7 @@ function Welcome() {
             src={require("../images/Researcher.png")}
             alt="Second slide"
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="CarouselText">
             <h3>Researchers who need data</h3>
             <p>
               If the data is published in highly hidden way, research cannot be
@@ -44,7 +44,7 @@ function Welcome() {
             src={require("../images/Balance.jpg")}
             alt="Third slide"
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="CarouselText">
             <h3>Our Aim</h3>
             <p>
               Publish data by meticulously balancing between privacy and
