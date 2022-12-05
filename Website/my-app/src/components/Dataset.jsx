@@ -8,7 +8,7 @@ function Dataset() {
       <h2 className="SectionTitle" id="DatasetTitle">
         Dataset
       </h2>
-      <Card border="success" style={{ width: "50rem" }} className="CenterCard">
+      <Card border="success" style={{ width: "75%" }} className="CenterCard">
         {/* Original Dataset */}
         <Card.Body>
           <div className="ImageDiv">
@@ -17,7 +17,7 @@ function Dataset() {
           </div>
           <Card.Title>Original Dataset</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
-            12 Attributes, 1 Added (Group ID)
+            1000 Records, 12 Attributes, 1 Added (Group ID)
           </Card.Subtitle>
           <Card.Text align="justify">
             The Incremental Diversity is obtained by choosing right sensitive
@@ -30,7 +30,7 @@ function Dataset() {
             variant="success"
             href="https://storage.googleapis.com/incremental_diversity_dataset/original_microdata_Records_1000_k_3.csv"
           >
-            Dataset
+            Original Dataset
           </Button>
         </Card.Body>
 
@@ -42,7 +42,7 @@ function Dataset() {
           </div>
           <Card.Title>Masked Dataset</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
-            Anatomy, k-anonymity, (l, e) diversity
+            Anatomy, k-anonymity (= 3), (l, e) diversity (= 1)
           </Card.Subtitle>
           <Card.Text align="justify">
             A Masked Microdata Table is nothing but the table obtained from
@@ -65,7 +65,7 @@ function Dataset() {
             variant="success"
             href="https://storage.googleapis.com/incremental_diversity_dataset/masked_microdata_Records_1000_k_3.csv"
           >
-            Dataset
+            Masked Dataset
           </Button>
         </Card.Body>
       </Card>

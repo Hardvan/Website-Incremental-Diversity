@@ -8,7 +8,7 @@ function Query(props) {
     "https://storage.googleapis.com/incremental_diversity_dataset/masked_microdata_Records_1000_k_3.csv";
 
   return (
-    <Card id={props.id} style={{ width: "50rem" }} className="CenterCard">
+    <Card id={props.id} style={{ width: "75%" }} className="CenterCard">
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
