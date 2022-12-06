@@ -34,7 +34,7 @@ function Query(props) {
         {/* Corresponding Query Table */}
         <Button
           variant="success"
-          href={dataset_link}
+          href={props.table}
           className="CustomButton"
           target="_blank"
         >

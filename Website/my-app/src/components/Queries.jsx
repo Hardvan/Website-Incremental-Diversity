@@ -20,6 +20,7 @@ function Queries() {
       explanation={query.explanation}
       link={query.link}
       memory={query.memory}
+      table={query.table}
     />
   ));
 
