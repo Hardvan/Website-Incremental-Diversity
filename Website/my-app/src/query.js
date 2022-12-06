@@ -3,8 +3,21 @@ function getQueries() {
     {
       id: 1,
       title: "State-gov Bachelors Details",
-      statement:
-        "SELECT Age,Gender,Zip_Code,Education,Employment FROM `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3` WHERE Education='Bachelors' AND Employment='State-gov' ORDER BY Group_ID LIMIT 1000",
+      statement: `SELECT
+        Age,
+        Gender,
+        Zip_Code,
+        Education,
+        Employment
+      FROM
+        \`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3\`
+      WHERE
+        Education='Bachelors'
+        AND Employment='State-gov'
+      ORDER BY
+        Group_ID
+      LIMIT
+        1000`,
       image: require("./images/Query1_Table.png"),
       caption: "Fig 1: Bachelors with State-gov Employment Masked Table",
       explanation:
@@ -15,8 +28,19 @@ function getQueries() {
     {
       id: 2,
       title: "Divorcee Details",
-      statement:
-        "SELECT Age,Relationship,Race,Disease FROM `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3` WHERE Marital_Status='Divorced' ORDER BY Group_ID LIMIT 1000",
+      statement: `SELECT
+        Age,
+        Relationship,
+        Race,
+        Disease
+      FROM
+        \`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3\`
+      WHERE
+        Marital_Status='Divorced'
+      ORDER BY
+        Group_ID
+      LIMIT
+        1000`,
       image: require("./images/Query2_Table.png"),
       caption: "Fig 2: Divorcee Masked Table",
       explanation:
@@ -27,8 +51,20 @@ function getQueries() {
     {
       id: 3,
       title: "Own-Child-White Details",
-      statement:
-        "SELECT Age,Gender,Zip_Code,Employment FROM `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3` WHERE Relationship='Own-child' AND Race='White' ORDER BY Group_ID LIMIT 1000",
+      statement: `SELECT
+        Age,
+        Gender,
+        Zip_Code,
+        Employment
+      FROM
+        \`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3\`
+      WHERE
+        Relationship='Own-child'
+        AND Race='White'
+      ORDER BY
+        Group_ID
+      LIMIT
+        1000`,
       image: require("./images/Query3_Table.png"),
       caption: "Fig 3: Own child with White Race Masked Table",
       explanation:
@@ -39,8 +75,20 @@ function getQueries() {
     {
       id: 4,
       title: "Widowed-Salary>50K Details",
-      statement:
-        "SELECT Age,Gender,Zip_Code,Education FROM `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3` WHERE Marital_Status='Widowed' AND Salary='>50K' ORDER BY Group_ID LIMIT 1000",
+      statement: `SELECT
+        Age,
+        Gender,
+        Zip_Code,
+        Education
+      FROM
+        \`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3\`
+      WHERE
+        Marital_Status='Widowed'
+        AND Salary='>50K'
+      ORDER BY
+        Group_ID
+      LIMIT
+        1000`,
       image: require("./images/Query4_Table.png"),
       caption: "Fig 4: Widowed with Salary>50K Masked Table",
       explanation:
