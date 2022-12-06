@@ -12,7 +12,10 @@ function Dataset() {
         {/* Original Dataset */}
         <Card.Body>
           <div className="ImageDiv">
-            <img src={require("../images/Original_Table.png")} alt="Query" />
+            <img
+              src={require("../images/Table_Images/Original_Microdata_25_3.png")}
+              alt="Original Microdata"
+            />
             <figcaption>Original Microdata Table</figcaption>
           </div>
           <Card.Title className="CardTitle">Original Dataset</Card.Title>
@@ -38,7 +41,10 @@ function Dataset() {
         {/* Masked Dataset */}
         <Card.Body>
           <div className="ImageDiv">
-            <img src={require("../images/Masked_Table.png")} alt="Query" />
+            <img
+              src={require("../images/Table_Images/Masked_Microdata_25_3.png")}
+              alt="Masked Mircrodata"
+            />
             <figcaption>Masked Microdata Table</figcaption>
           </div>
           <Card.Title className="CardTitle">Masked Dataset</Card.Title>
