@@ -12,7 +12,7 @@ function Query(props) {
       <Card.Body>
         <Card.Title className="CardTitle">{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
-          Query {props.slno}
+          Query {props.slno} ({props.memory} runtime memory used)
         </Card.Subtitle>
         <code className="Code">{props.statement}</code>
         <div className="ImageDiv">

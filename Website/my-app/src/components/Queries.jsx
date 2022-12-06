@@ -19,6 +19,7 @@ function Queries() {
       caption={query.caption}
       explanation={query.explanation}
       link={query.link}
+      memory={query.memory}
     />
   ));
 
