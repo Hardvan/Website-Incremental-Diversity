@@ -8,9 +8,11 @@ function About() {
       <h2 className="SectionTitle">About</h2>
       {/* Team Members */}
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Team Members</Accordion.Header>
-        <Accordion.Body>
-          <ListGroup as="ol" numbered>
+        <Accordion.Header className="AccordionHeader">
+          Team Members
+        </Accordion.Header>
+        <Accordion.Body className="AccordionBody">
+          <ListGroup as="ul">
             <ListGroup.Item as="li">Hardik Hiraman Pawar</ListGroup.Item>
             <ListGroup.Item as="li">Tanmay S Lal</ListGroup.Item>
             <ListGroup.Item as="li">S Mohammed Ashiq</ListGroup.Item>
@@ -20,8 +22,10 @@ function About() {
       </Accordion.Item>
       {/* Project Description */}
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Project Description</Accordion.Header>
-        <Accordion.Body className="Description">
+        <Accordion.Header className="AccordionHeader">
+          Project Description
+        </Accordion.Header>
+        <Accordion.Body className="AccordionBody">
           The need of protecting the privacy of data has got an immense
           importance in the society. There are many anonymity models that exist
           today, most of them aiming to preserve privacy for only a single

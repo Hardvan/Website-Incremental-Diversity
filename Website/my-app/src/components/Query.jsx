@@ -22,10 +22,22 @@ function Query(props) {
         <Card.Text align="justify" className="CardText">
           {props.explanation}
         </Card.Text>
-        <Button variant="dark" href={props.link} className="CustomButton">
+        {/* Query Button */}
+        <Button
+          variant="dark"
+          href={props.link}
+          className="CustomButton"
+          target="_blank"
+        >
           Query
         </Button>{" "}
-        <Button variant="success" href={dataset_link} className="CustomButton">
+        {/* Corresponding Query Table */}
+        <Button
+          variant="success"
+          href={dataset_link}
+          className="CustomButton"
+          target="_blank"
+        >
           Dataset
         </Button>
       </Card.Body>

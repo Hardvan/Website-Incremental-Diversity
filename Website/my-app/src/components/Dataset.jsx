@@ -33,6 +33,7 @@ function Dataset() {
             variant="success"
             href="https://storage.googleapis.com/incremental_diversity_dataset/original_microdata_Records_1000_k_3.csv"
             className="CustomButton"
+            target="_blank"
           >
             Original Dataset
           </Button>
@@ -72,6 +73,7 @@ function Dataset() {
             variant="success"
             href="https://storage.googleapis.com/incremental_diversity_dataset/masked_microdata_Records_1000_k_3.csv"
             className="CustomButton"
+            target="_blank"
           >
             Masked Dataset
           </Button>
