@@ -14,35 +14,40 @@
       crossorigin="anonymous"
     />
     <!--  Link to Custom Stylesheet -->
-     <link rel="stylesheet" href="fileUpload.css" />
+    <link rel="stylesheet" href="fileUpload.css" />
   </head>
-  
-          
+
   <body>
-    <div class="Guideline_box">
-      <h3> Guidelines for the dataset:</h3>
+    <div>
+      <h3>Guidelines for the dataset:</h3>
       <ol class="Guidelines">
         <li>
-          The most sensitive attribute should be considered as primary sensitive attribute. 
-          The second most sensitive attribute should be considered as secondary sensitive attribute, and so on.  
+          The most sensitive attribute should be considered as primary sensitive
+          attribute. The second most sensitive attribute should be considered as
+          secondary sensitive attribute, and so on.
         </li>
-        <li>
-          The quasi-identifiers should be either generalised or masked.
-        </li>
-        <li>
-          The dataset should be in tabular form in excel. 
-        </li>
+        <li>The quasi-identifiers will be either generalised or masked.</li>
+        <li>The dataset should be in .csv or .xlsx format.</li>
       </ol>
     </div>
 
     <h3>Check with your Own Dataset:</h3>
     <div class="chooseFile">
-      <strong><p class="description">Click on the "Choose File" button to upload your dataset:</p></strong>
-      <form action="/action_page.php">
+      <strong
+        ><p>
+          Click on the "Choose File" button to upload your dataset:
+        </p></strong
+      >
+      <form action="/">
         <fieldset>
-          <label for="myFile" style="font-weight:bold ;">Select a CSV File:</label>
-          <input type="file" name="myFile" id="myFile" accept=".csv"><br>
-          <input type="submit" class="submit" id="Submit" name="Submit">
+          <label for="myFile">Select a CSV File:</label>
+          <input
+            type="file"
+            name="myFile"
+            id="myFile"
+            accept=".csv,.xlsx"
+          /><br />
+          <input type="submit" id="Submit" name="Submit" />
         </fieldset>
       </form>
     </div>
