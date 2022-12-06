@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 function Dataset() {
   return (
-    <div className="Dataset" id="dataset">
+    <div id="dataset">
       <h2 className="SectionTitle" id="DatasetTitle">
         Dataset
       </h2>

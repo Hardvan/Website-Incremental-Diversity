@@ -2,11 +2,12 @@ import React from "react";
 import "../styles.css";
 // Importing Components
 import TitleNavBar from "./TitleNavBar";
-import Queries from "./Queries";
-import About from "./About";
-import Footer from "./Footer";
 import Welcome from "./Welcome";
 import Dataset from "./Dataset";
+import Queries from "./Queries";
+import FileUpload from "./FileUpload";
+import About from "./About";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Welcome />
       <Dataset />
       <Queries />
+      <FileUpload />
       <About />
       <Footer />
     </div>

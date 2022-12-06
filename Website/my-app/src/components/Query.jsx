@@ -4,9 +4,6 @@ import Button from "react-bootstrap/Button";
 
 // Component for a single Query
 function Query(props) {
-  const dataset_link =
-    "https://storage.googleapis.com/incremental_diversity_dataset/masked_microdata_Records_1000_k_3.csv";
-
   return (
     <Card id={props.id} style={{ width: "75%" }} className="CenterCard">
       <Card.Body>
