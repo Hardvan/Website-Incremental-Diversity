@@ -184,7 +184,7 @@
 
 .GuidelinesList li::before {
   content: "";
-  background-image: url("images/Tick2.png");
+  background-image: url("../../images/Tick2.png");
   background-size: contain;
   display: inline-block;
   width: 1em;
