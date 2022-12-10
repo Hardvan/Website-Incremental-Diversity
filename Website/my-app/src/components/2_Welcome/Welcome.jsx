@@ -10,7 +10,7 @@ function Welcome() {
         <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
-            src={require("../images/Privacy.jpg")}
+            src={require("../../images/Privacy.jpg")}
             alt="First slide"
           />
           <Carousel.Caption className="CarouselText">
@@ -25,7 +25,7 @@ function Welcome() {
         <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
-            src={require("../images/Researcher.png")}
+            src={require("../../images/Researcher.png")}
             alt="Second slide"
           />
           <Carousel.Caption className="CarouselText">
@@ -41,7 +41,7 @@ function Welcome() {
         <Carousel.Item interval={4200}>
           <img
             className="d-block w-100"
-            src={require("../images/Balance.jpg")}
+            src={require("../../images/Balance.jpg")}
             alt="Third slide"
           />
           <Carousel.Caption className="CarouselText">

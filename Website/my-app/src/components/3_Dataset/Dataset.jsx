@@ -13,7 +13,7 @@ function Dataset() {
         <Card.Body>
           <div className="ImageDiv">
             <img
-              src={require("../images/Table_Images/Original_Microdata_25_3.png")}
+              src={require("../../images/Table_Images/Original_Microdata_25_3.png")}
               alt="Original Microdata"
             />
             <figcaption>Original Microdata Table</figcaption>
@@ -43,7 +43,7 @@ function Dataset() {
         <Card.Body>
           <div className="ImageDiv">
             <img
-              src={require("../images/Table_Images/Masked_Microdata_25_3.png")}
+              src={require("../../images/Table_Images/Masked_Microdata_25_3.png")}
               alt="Masked Mircrodata"
             />
             <figcaption>Masked Microdata Table</figcaption>

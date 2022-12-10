@@ -1,6 +1,6 @@
 import React from "react";
 import Dropdown from "react-bootstrap/Dropdown";
-import getQueries from "../query";
+import getQueries from "../../query";
 
 function DropdownItems() {
   // Getting the queries from the query.js file
