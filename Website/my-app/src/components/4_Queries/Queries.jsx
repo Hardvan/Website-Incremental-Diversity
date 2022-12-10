@@ -1,6 +1,7 @@
 import React from "react";
 import Query from "./Query";
 import getQueries from "../../query";
+import "./styles.css";
 
 // Component to display all Queries
 function Queries() {

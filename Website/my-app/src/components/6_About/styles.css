@@ -1,0 +1,14 @@
+/** Styling for About */
+#about {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 4rem;
+}
+
+.AccordionHeader {
+  font-family: "Merriweather", serif;
+}
+
+.AccordionBody {
+  font-family: "Playfair Display", serif;
+}
