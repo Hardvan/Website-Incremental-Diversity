@@ -20,10 +20,12 @@ function FileUpload() {
     if (!isFilePicked) {
       alert("Please select a file to upload first!");
     } else {
-      const url = "http://localhost:3000/upload"; // TODO: Change when hosting on GitHub
+      const url = "http://localhost:8080/uploadFile"; // TODO: Change when hosting on GitHub
+
       const formData = new FormData();
       formData.append("FileReceived", selectedFile);
       formData.append("FileName", selectedFile.name);
+
       const config = {
         headers: {
           "content-type": "multipart/form-data",
