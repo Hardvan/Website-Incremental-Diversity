@@ -1,4 +1,5 @@
-//? Enter "npm run dev" in the terminal to start the server
+//? cd to backend. Enter "npm run dev" in the terminal to start the server
+//? When console.log() -ing, the output will be displayed in the terminal
 
 const express = require("express");
 const app = express();
@@ -26,7 +27,26 @@ app.post("/uploadFile", async (req, res) => {
     `${__dirname}/ReceivedFileFolder/${received_file.name}` // TODO: Change when hosting on GitHub
   );
 
-  // TODO: Send the file to python script
+  // Connection with python script (no need of this step. Just for testing)
+  var spawn = require("child_process").spawn;
+
+  var pythonProcess = spawn("python", ["./test.py"]);
+
+  // Transfer received file to python script
+  pythonProcess.stdin.write(JSON.stringify(received_file));
+  pythonProcess.stdin.end();
+
+  // Display the output
+  python_received_file = "";
+  pythonProcess.stdout.on("data", function (data) {
+    console.log("Displaying data from python script: ");
+    console.log(data.toString());
+    python_received_file = data;
+  });
+
+  // TODO: Send the file to incremental diversity python script
+
+  // TODO: Send response to React
 
   res.send("File uploaded successfully");
 });
