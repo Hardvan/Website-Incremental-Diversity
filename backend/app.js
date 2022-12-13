@@ -15,11 +15,11 @@ app.post("/post", (req, res) => {
 
 // POST to upload file
 app.post("/uploadFile", async (req, res) => {
-  // Save the received file in a variable
+  //* Save the received file in a variable
   const received_file = req.files.FileReceived;
 
   // Console log the received file
-  console.log("Displaying Received File Details: ");
+  console.log("\nDisplaying Received File Details: ");
   console.log(received_file);
 
   // Saving the file in a folder (no need of this step. Just for testing)
@@ -27,24 +27,23 @@ app.post("/uploadFile", async (req, res) => {
     `${__dirname}/ReceivedFileFolder/${received_file.name}` // TODO: Change when hosting on GitHub
   );
 
-  // Connection with python script (no need of this step. Just for testing)
+  // TODO: Send the file to incremental diversity python script
+  //* Connection with python script
   var spawn = require("child_process").spawn;
-
   var pythonProcess = spawn("python", ["./test.py"]);
 
-  // Transfer received file to python script
+  //* Transfer received csv file to python script
+  // JSON.stringify() converts the received file to a string
   pythonProcess.stdin.write(JSON.stringify(received_file));
-  pythonProcess.stdin.end();
+  pythonProcess.stdin.end(); // End the input stream
 
-  // Display the output
+  //* Display the output
   python_received_file = "";
   pythonProcess.stdout.on("data", function (data) {
-    console.log("Displaying data from python script: ");
+    console.log("\nDisplaying data from python script: ");
     console.log(data.toString());
-    python_received_file = data;
+    python_received_file = data; // Copy the masked file into a variable
   });
-
-  // TODO: Send the file to incremental diversity python script
 
   // TODO: Send response to React
 
