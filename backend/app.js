@@ -33,19 +33,14 @@ app.post("/uploadFile", async (req, res) => {
   var pythonProcess = spawn("python", ["./test.py"]);
 
   //* Transfer received csv file to python script
-  // JSON.stringify() converts the received file to a string
+  // JSON.stringify() converts the received file to a string.
+  // Directly sending the csv file will result in an error
   pythonProcess.stdin.write(JSON.stringify(received_file));
   pythonProcess.stdin.end(); // End the input stream
 
-  //* Display the output
-  python_received_file = "";
-  pythonProcess.stdout.on("data", function (data) {
-    console.log("\nDisplaying data from python script: ");
-    console.log(data.toString());
-    python_received_file = data; // Copy the masked file into a variable
-  });
-
   // TODO: Send response to React
+  // OR
+  // TODO: Download Masked File on the client side
 
   res.send("File uploaded successfully");
 });
