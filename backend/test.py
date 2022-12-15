@@ -16,8 +16,5 @@ with open("./OutputFile/TEST.csv", "w+") as f:
 
 # Note: If you want to send data to node js, you can use the following code
 # # ? Send data to node js as json
-# # Convert each ascii value to char and join them to a string
-
 # print(json.dumps(return_data))  # Convert string to json
-
 # sys.stdout.flush()  # Flush the output to node js

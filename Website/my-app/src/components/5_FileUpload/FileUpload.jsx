@@ -75,7 +75,7 @@ function FileUpload() {
                 type="file"
                 name="FileReceived"
                 id="FileReceived"
-                accept=".csv,.xlsx"
+                accept=".csv"
                 onChange={changeHandler}
               />{" "}
               {isFilePicked ? (
