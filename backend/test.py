@@ -7,10 +7,11 @@ received_data = sys.stdin.readline()
 # ? Convert data from json to python dictionary
 received_data = json.loads(received_data)
 
+# ? Convert each ascii value to character and join them to a string
 return_data = "".join(map(chr, received_data["data"]["data"]))
 
-# JSON string to csv file
-with open("./OutputFile/TEST.csv", "w+") as f:
+# ? Write JSON string to csv file
+with open("./OutputFile/TEST.csv", "w+", newline="") as f:
     f.write(return_data)
 
 

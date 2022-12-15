@@ -34,7 +34,7 @@ app.post("/uploadFile", async (req, res) => {
 
   //* Transfer received csv file to python script
   // JSON.stringify() converts the received file to a string.
-  // Directly sending the csv file will result in an error
+  // Directly sending the csv file will result in an error.
   pythonProcess.stdin.write(JSON.stringify(received_file));
   pythonProcess.stdin.end(); // End the input stream
 
