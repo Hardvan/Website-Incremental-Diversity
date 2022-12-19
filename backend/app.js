@@ -30,13 +30,15 @@ app.post("/uploadFile", async (req, res) => {
   // TODO: Send the file to incremental diversity python script
   //* Connection with python script
   var spawn = require("child_process").spawn;
-  var pythonProcess = spawn("python", ["./test.py"]);
+  var pythonProcess = spawn("python", ["./anonymise.py"]);
 
   //* Transfer received csv file to python script
   // JSON.stringify() converts the received file to a string.
   // Directly sending the csv file will result in an error.
   pythonProcess.stdin.write(JSON.stringify(received_file));
   pythonProcess.stdin.end(); // End the input stream
+
+  console.log("Returned from Python Script");
 
   // TODO: Send response to React
   // OR
