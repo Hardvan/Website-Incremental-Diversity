@@ -22,9 +22,9 @@ app.post("/uploadFile", async (req, res) => {
   console.log("\nDisplaying Received File Details: ");
   console.log(received_file);
 
-  // Saving the file in a folder (no need of this step. Just for testing)
+  // Saving the file in a folder
   await received_file.mv(
-    `${__dirname}/ReceivedFileFolder/${received_file.name}` // TODO: Change when hosting on GitHub
+    `${__dirname}/ReceivedFileFolder/received_microdata.csv` // TODO: Change when hosting on GitHub
   );
 
   // TODO: Send the file to incremental diversity python script

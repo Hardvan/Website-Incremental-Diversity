@@ -10,16 +10,22 @@ import sys
 import json
 
 
-def getMicrodata(string_file, sensitive_attribute):
+def getMicrodata(sensitive_attribute):
     """ Returns the Microdata & Extra Time taken for displaying the microdata table. """
+
+    final_lines = None
+    with open("ReceivedFileFolder/received_microdata.csv", "r") as f:
+        final_lines = f.readlines()
+
+    no_of_records = len(final_lines) - 1  # -1 for header
 
     diction = {}
 
     # Columns
-    columns = string_file.split("\n")[0].split(",")
+    columns = final_lines[0].split(",")
     columns = list(map(lambda x: x.strip(), columns))  # Removing Spaces
 
-    for i, line in enumerate(string_file):
+    for i, line in enumerate(final_lines[1:]):
 
         slno = i+1
 
@@ -43,7 +49,15 @@ def getMicrodata(string_file, sensitive_attribute):
 
         diction[slno]["Group ID"] = ((slno-1)//K)+1
 
-    return diction
+    df, columns = NestedDictionaryToDataFrame(diction)
+
+    # # Convert df to string
+    # return_data = df.to_string(index=False)
+
+    # with open("OutputFile/Anonymised_Table.csv", "w+", newline="") as f:
+    #     f.write(return_data)
+
+    return diction, no_of_records
 
 
 def getValuesInEq(eq_class, attribute_name):
@@ -526,14 +540,14 @@ def addLowerAndUpperAge(table):
     return output
 
 
-def main(string_file, no_of_records, K):
+def main(K):
 
     # Determining Sensitive Attribute according to Algorithm chosen
     sensitive_attribute = "Disease"
 
     # 1) Getting Microdata
 
-    original_table = getMicrodata(string_file, sensitive_attribute)
+    original_table, no_of_records = getMicrodata(sensitive_attribute)
 
     # 2) Diversify Records
 
@@ -562,41 +576,38 @@ def main(string_file, no_of_records, K):
 
     df, columns = NestedDictionaryToDataFrame(original_table)
     df.to_csv(
-        f"OutputFile/original_microdata_Records_{no_of_records}_k_{K}.csv", index=False)
+        f"./OutputFile/original_microdata_Records_{no_of_records}_k_{K}.csv", index=False)
 
     # 7) Converting to Pandas Dataframe
     masked_df, columns = NestedDictionaryToDataFrame(masked_microdata)
 
     masked_df.to_csv(
-        f"OutputFile/masked_microdata_Records_{no_of_records}_k_{K}.csv", index=False)
+        f"./OutputFile/masked_microdata_Records_{no_of_records}_k_{K}.csv", index=False)
 
-    return
+    return no_of_records
 
 
 # TOP LEVEL STATEMENTS
 
-# ? Receive data from node js
-received_data = sys.stdin.readline()
+# # ? Receive data from node js
+# received_data = sys.stdin.readline()
 
-# ? Convert data from json to python dictionary
-received_data = json.loads(received_data)
+# # ? Convert data from json to python dictionary
+# received_data = json.loads(received_data)
 
-# ? Convert each ascii value to character and join them to a string
-return_data = "".join(map(chr, received_data["data"]["data"]))
+# # ? Convert each ascii value to character and join them to a string
+# return_data = "".join(map(chr, received_data["data"]["data"]))
+
 
 # Global Variables
 no_of_records = None
 K = 3
 mode = 4
 
-string_file = copy.deepcopy(return_data)
+# string_file = copy.deepcopy(return_data)
 
-no_of_records = len(string_file) - 1  # -1 for header
+no_of_records = main(K)
 
-
-main(string_file, no_of_records, K)
-
-# * Will be used later to save file
 # # ? Write string to csv file and read it
 # with open("./OutputFile/Anonymised_Table.csv", "w+", newline="") as f:
 #     f.write(return_data)
