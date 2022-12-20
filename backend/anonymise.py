@@ -3,18 +3,21 @@ import matplotlib.pyplot as plt
 import copy
 from tabulate import tabulate
 import math
-import time
 
 # For node js
 import sys
 import json
+
+# ? STEPS
+# * 1) Save the microdata in ReceivedFileFolder
+# * 2) Run the anonymise.py file separately using Code Runner extension to get the anonymised data
 
 
 def getMicrodata(sensitive_attribute):
     """ Returns the Microdata & Extra Time taken for displaying the microdata table. """
 
     final_lines = None
-    with open("ReceivedFileFolder/received_microdata.csv", "r") as f:
+    with open("backend/ReceivedFileFolder/received_microdata.csv", "r") as f:
         final_lines = f.readlines()
 
     no_of_records = len(final_lines) - 1  # -1 for header
@@ -32,30 +35,40 @@ def getMicrodata(sensitive_attribute):
         diction[slno] = {}
 
         attributes = line.split(',')
-        diction[slno]["Age"] = attributes[0].strip()
-        diction[slno]["Gender"] = attributes[1].strip()
-        diction[slno]["Zip Code"] = attributes[2].strip()
-        diction[slno]["Education"] = attributes[3].strip()
-        diction[slno]["Employment"] = attributes[4].strip()
-        diction[slno]["Marital Status"] = attributes[5].strip()
-        diction[slno]["Marital Parent"] = getParent(
-            diction[slno]["Marital Status"])
-        diction[slno]["Relationship"] = attributes[6].strip()
-        diction[slno]["Race"] = attributes[7].strip()
-        diction[slno]["Salary"] = attributes[8].strip()
-        diction[slno]["Disease"] = attributes[9].replace("\n", "").strip()
-        diction[slno]["Disease Parent"] = getDiseaseParent(
-            diction[slno]["Disease"])
+
+        for column in columns:
+            diction[slno][column] = attributes[columns.index(column)].strip()
+            if column == "Marital Status":
+                diction[slno]["Marital Parent"] = getParent(
+                    diction[slno]["Marital Status"])
+            elif column == "Disease":
+                diction[slno]["Disease Parent"] = getDiseaseParent(
+                    diction[slno]["Disease"])
+
+        # diction[slno]["Age"] = attributes[0].strip()
+        # diction[slno]["Gender"] = attributes[1].strip()
+        # diction[slno]["Zip Code"] = attributes[2].strip()
+        # diction[slno]["Education"] = attributes[3].strip()
+        # diction[slno]["Employment"] = attributes[4].strip()
+        # diction[slno]["Marital Status"] = attributes[5].strip()
+        # diction[slno]["Marital Parent"] = getParent(
+        #     diction[slno]["Marital Status"])
+        # diction[slno]["Relationship"] = attributes[6].strip()
+        # diction[slno]["Race"] = attributes[7].strip()
+        # diction[slno]["Salary"] = attributes[8].strip()
+        # diction[slno]["Disease"] = attributes[9].replace("\n", "").strip()
+        # diction[slno]["Disease Parent"] = getDiseaseParent(
+        #     diction[slno]["Disease"])
 
         diction[slno]["Group ID"] = ((slno-1)//K)+1
 
     df, columns = NestedDictionaryToDataFrame(diction)
 
-    # # Convert df to string
-    # return_data = df.to_string(index=False)
+    # Convert df to string
+    return_data = df.to_string(index=False)
 
-    # with open("OutputFile/Anonymised_Table.csv", "w+", newline="") as f:
-    #     f.write(return_data)
+    with open("backend/ReceivedFileFolder/string_original.csv", "w+", newline="") as f:
+        f.write(return_data)
 
     return diction, no_of_records
 
@@ -126,7 +139,8 @@ def getDiseaseParent(child):
         if child in children:
             return parent
     else:
-        raise Exception(f"PARENT NOT FOUND for: {child}")
+        pass
+        # raise Exception(f"PARENT NOT FOUND for: {child}")
 
 
 def DiseaseParentsCheck(value, existing_values):
@@ -576,13 +590,13 @@ def main(K):
 
     df, columns = NestedDictionaryToDataFrame(original_table)
     df.to_csv(
-        f"./OutputFile/original_microdata_Records_{no_of_records}_k_{K}.csv", index=False)
+        f"backend/OutputFile/original_microdata_Records_{no_of_records}_k_{K}.csv", index=False)
 
     # 7) Converting to Pandas Dataframe
     masked_df, columns = NestedDictionaryToDataFrame(masked_microdata)
 
     masked_df.to_csv(
-        f"./OutputFile/masked_microdata_Records_{no_of_records}_k_{K}.csv", index=False)
+        f"backend/OutputFile/masked_microdata_Records_{no_of_records}_k_{K}.csv", index=False)
 
     return no_of_records
 
