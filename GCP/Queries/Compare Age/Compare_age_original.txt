@@ -1,0 +1,12 @@
+SELECT
+  Age,
+  Gender,
+  Zip_Code,
+  Education,
+  Employment
+FROM
+  `plenary-chalice-369413.Incremental_Diversity_Dataset.Original_Microdata_1000_Records_k_3`
+WHERE
+  Age=35
+LIMIT
+  1000

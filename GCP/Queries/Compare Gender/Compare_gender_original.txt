@@ -1,0 +1,14 @@
+SELECT
+  Age,
+  Gender,
+  Education,
+  Marital_Status,
+  Disease
+FROM
+  `plenary-chalice-369413.Incremental_Diversity_Dataset.Original_Microdata_1000_Records_k_3`
+WHERE
+  Gender="Male"
+  AND
+  Education="Bachelors"
+LIMIT
+  1000

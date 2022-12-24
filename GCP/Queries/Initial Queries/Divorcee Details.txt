@@ -1,0 +1,14 @@
+SELECT
+  Lower_Age,
+  Upper_Age,
+  Relationship,
+  Race,
+  Disease
+FROM
+  `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Microdata_1000_Records_k_3_v2`
+WHERE
+  Marital_Status='Divorced'
+ORDER BY
+  Group_ID
+LIMIT
+  1000

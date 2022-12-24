@@ -1,0 +1,16 @@
+SELECT
+  Lower_Age,
+  Upper_Age,
+  Gender,
+  Zip_Code,
+  Education,
+  Employment
+FROM
+  `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Microdata_1000_Records_k_3_v2`
+WHERE
+  Lower_Age>=30
+  AND Upper_Age<=40
+ORDER BY
+  Group_ID
+LIMIT
+  1000
