@@ -14,18 +14,12 @@
         <div class="box">
           <div class="querybox">
             <p>
-              <span class="textStyle">SELECT</span> *<br />
+              <span class="textStyle">SELECT</span
+              >Age,Gender,Zip_Code,Employment,Marital_Status <br />
               <span class="textStyle">FROM</span>
-              `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3`<br />
-              <span class="textStyle">WHERE</span> Education='Bachelors' AND
-              Employment='State-gov'
-              <span class="textStyle">ORDER BY <br /></span>Group_ID<span
-                class="textStyle"
-              >
-                <br />
-                LIMIT</span
-              >
-              1000
+              `plenary-chalice-369413.Incremental_Diversity_Dataset.Original_Microdata_1000_Records_k_3`<br />
+              <span class="textStyle">WHERE</span> Zip_Code=51618 <br />
+              <span class="textStyle">LIMIT</span> 1000
             </p>
           </div>
           <figure>
@@ -42,16 +36,12 @@
         <div class="box">
           <div class="querybox">
             <p>
-              <span class="textStyle">SELECT</span> *<br />
+              <span class="textStyle">SELECT</span>Lower_Age,Upper_Age,Gender,
+              Zip_Code,Employment,Marital_Status <br />
               <span class="textStyle">FROM</span
-              >`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3`<br />
-              <span class="textStyle">WHERE</span> Marital_Status='Divorced'
-              <br />
-              <span class="textStyle">ORDER BY</span>Group_ID <br /><span
-                class="textStyle"
-                >LIMIT</span
-              >
-              1000
+              >`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Microdata_1000_Records_k_3_v2`<br />
+              <span class="textStyle">WHERE</span> Zip_Code LIKE "51%" <br />
+              <span class="textStyle">LIMIT</span> 1000
             </p>
           </div>
           <figure>
