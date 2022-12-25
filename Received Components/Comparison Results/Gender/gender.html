@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Additional Queries</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section>
-        <h1>Query 2:Gender</h1>
-        <div class="section">
-            <div class="box">
-                <div class="querybox">
-                    <p><span>SELECT</span> Age,
-                        Gender,
-                        Education,
-                        Marital_Status,
-                        Disease<br>
-                        <span>FROM</span> `plenary-chalice-369413.Incremental_Diversity_Dataset.Original_Microdata_1000_Records_k_3`<br>
-                        <span>WHERE</span>  Gender="Male"
-                        AND
-                        Education="Bachelors" <span>LIMIT</span> 1000
-                    </p>
-                  
-                </div>
-                <figure>
-                    <div><div class="image"><img src="Compare Gender Original Result.png" class="one" ></div></div>
-                   
-                    <figcaption>Fig1:Original Dataset</figcaption>
-                </figure>
+      <h1>Query 2:Gender</h1>
+      <div class="Section">
+        <div class="Box">
+          <div class="QueryBox">
+            <p>
+              <span class="ApplySpan">SELECT</span> Age, Gender, Education,
+              Marital_Status, Disease<br />
+              <span class="ApplySpan">FROM</span>
+              `plenary-chalice-369413.Incremental_Diversity_Dataset.Original_Microdata_1000_Records_k_3`<br />
+              <span class="ApplySpan">WHERE</span> Gender="Male" AND
+              Education="Bachelors" <span class="ApplySpan">LIMIT</span> 1000
+            </p>
+          </div>
+          <figure class="ImportImage">
+            <div>
+              <div class="Image">
+                <img
+                  class="InsertImage"
+                  src="Compare Gender Original Result.png"
+                  class="one"
+                />
+              </div>
             </div>
 
-            <div class="box">
-                <div class="querybox">
-                    <p><span>SELECT</span> Lower_Age,
-                        Upper_Age,
-                        Gender,
-                        Education,
-                        Marital_Status,
-                        Disease<br>
-                        <span>FROM</span>`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Microdata_1000_Records_k_3_v2`<br>
-                        <span>WHERE</span> Education="Bachelors"
-                         <span>LIMIT</span> 1000
-                    </p>
-                </div>
-                <figure>
-                    <div><div class="image"><img src="Compare Gender Masked Result.png" alt=""></div></div>
-                    <figcaption>Fig2:Masked Dataset</figcaption>
-                </figure>
-            </div>
+            <figcaption class="FigureCaption">Fig1:Original Dataset</figcaption>
+          </figure>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic ad, dicta inventore iure amet perspiciatis labore, cupiditate veritatis excepturi quos optio odio ab aliquam repellat vero. Excepturi similique in, asperiores autem quisquam vel eos omnis necessitatibus libero sunt quae cumque aperiam saepe molestias natus. Eos reprehenderit maxime odit animi!</p>
+
+        <div class="Box">
+          <div class="QueryBox">
+            <p>
+              <span class="ApplySpan">SELECT</span> Lower_Age, Upper_Age,
+              Gender, Education, Marital_Status, Disease<br />
+              <span class="ApplySpan">FROM</span
+              >`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Microdata_1000_Records_k_3_v2`<br />
+              <span class="ApplySpan">WHERE</span> Education="Bachelors"
+              <span class="ApplySpan"> LIMIT</span> 1000
+            </p>
+          </div>
+          <figure class="ImportImage">
+            <div>
+              <div class="Image">
+                <img
+                  class="InsertImage"
+                  src="Compare Gender Masked Result.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <figcaption class="FigureCaption">Fig2:Masked Dataset</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic ad,
+        dicta inventore iure amet perspiciatis labore, cupiditate veritatis
+        excepturi quos optio odio ab aliquam repellat vero. Excepturi similique
+        in, asperiores autem quisquam vel eos omnis necessitatibus libero sunt
+        quae cumque aperiam saepe molestias natus. Eos reprehenderit maxime odit
+        animi!
+      </p>
     </section>
-</body>
+  </body>
 </html>

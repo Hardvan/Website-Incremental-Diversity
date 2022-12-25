@@ -5,49 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Additional Queries</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="zipcode.css" />
   </head>
   <body>
     <section class="queries">
-      <h1>Query 1:Age</h1>
+      <h1>Query 3:Zip_Code</h1>
       <div class="section">
         <div class="box">
-          <div class="queryBox">
+          <div class="querybox">
             <p>
-              <span class="textStyle">SELECT</span>
-              Age,Gender,Zip_Code,Education,Employment<br />
+              <span class="textStyle">SELECT</span> *<br />
               <span class="textStyle">FROM</span>
-              `plenary-chalice-369413.Incremental_Diversity_Dataset.Original_Microdata_1000_Records_k_3`<br />
-              <span class="textStyle">WHERE</span> Age=35 <br />
-              <span class="textStyle">LIMIT</span> 1000
+              `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3`<br />
+              <span class="textStyle">WHERE</span> Education='Bachelors' AND
+              Employment='State-gov'
+              <span class="textStyle">ORDER BY <br /></span>Group_ID<span
+                class="textStyle"
+              >
+                <br />
+                LIMIT</span
+              >
+              1000
             </p>
           </div>
           <figure>
             <div>
               <div class="image">
-                <img src="Compare Age Original Result.png" alt="" />
+                <img class="one" src="Compare Zip_Code Original Result.png" />
               </div>
             </div>
+
             <figcaption>Fig1:Original Dataset</figcaption>
           </figure>
         </div>
 
         <div class="box">
-          <div class="queryBox">
+          <div class="querybox">
             <p>
-              <span class="textStyle">SELECT</span>
-              Lower_Age,Upper_Age,Gender,Zip_Code,Education,Employment<br />
-              <span class="textStyle">FROM</span>
-              `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Microdata_1000_Records_k_3_v2`<br />
-              <span class="textStyle">WHERE</span> Lower_Age>=30 AND
-              Upper_Age<=40 <span class="textStyle">ORDER BY </span> Group_ID
-              <br /><span class="textStyle">LIMIT</span> 1000
+              <span class="textStyle">SELECT</span> *<br />
+              <span class="textStyle">FROM</span
+              >`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Table_1000_Records_k_3`<br />
+              <span class="textStyle">WHERE</span> Marital_Status='Divorced'
+              <br />
+              <span class="textStyle">ORDER BY</span>Group_ID <br /><span
+                class="textStyle"
+                >LIMIT</span
+              >
+              1000
             </p>
           </div>
           <figure>
             <div>
               <div class="image">
-                <img src="Compare Age Masked Result.png" alt="" />
+                <img
+                  class="two"
+                  src="Compare Zip_Code Masked Result.png"
+                  alt=""
+                />
               </div>
             </div>
             <figcaption>Fig2:Masked Dataset</figcaption>

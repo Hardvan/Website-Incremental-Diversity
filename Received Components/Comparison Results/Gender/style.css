@@ -2,45 +2,45 @@
   padding: 0;
   box-sizing: border-box;
 }
-section {
+Section {
   border: 2px solid black;
   padding-inline: 10px;
 }
-span {
+.ApplySpan {
   color: blue;
 }
-.section {
+.Section {
   display: flex;
   gap: 1rem;
 }
-.box {
+.Box {
   border: 1px solid black;
 }
-.querybox {
+.QueryBox {
   background-color: lightgray;
   border: 1px solid gray;
   border-left: 5px solid rgb(21, 161, 247);
   padding-inline: 1rem;
   margin: 10px;
 }
-figure {
+.ImportImage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-.image {
+.Image {
   border: 3px solid black;
   display: inline-block;
   height: 300px;
   width: 450px;
 }
 
-img{
+.InsertImage {
   height: 290px;
   width: 445px;
 }
 
-figcaption{
+.FigureCaption {
   text-align: center;
 }

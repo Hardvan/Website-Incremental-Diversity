@@ -16,7 +16,7 @@
 .box {
   border: 1px solid black;
 }
-.queryBox {
+.querybox {
   background-color: lightgray;
   border: 1px solid gray;
   border-left: 5px solid rgb(21, 161, 247);
@@ -32,6 +32,20 @@ figure {
 .image {
   border: 3px solid black;
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 450px;
+}
+
+.one {
+  height: 140px;
+  width: 430px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.two {
+  height: 125px;
+  width: 430px;
 }
