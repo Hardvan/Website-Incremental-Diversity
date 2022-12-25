@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    border: 2px solid black;
+    padding-inline: 10px;
+}
+span {
+    color: blue;
+}
+.section {
+    display: flex;
+    gap: 1rem;
+}
+.box {
+    border: 1px solid black;
+}
+.querybox {
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-left: 5px solid rgb(21, 161, 247);
+    padding-inline: 1rem;
+    margin: 10px;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.image {
+    border: 3px solid black;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
