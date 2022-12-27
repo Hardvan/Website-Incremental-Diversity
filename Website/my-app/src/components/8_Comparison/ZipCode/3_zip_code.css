@@ -2,16 +2,20 @@
   border: 2px solid black;
   padding-inline: 10px;
 }
+
 .textStyle {
   color: blue;
 }
+
 .section {
   display: flex;
   gap: 1rem;
 }
+
 .box {
   border: 1px solid black;
 }
+
 .querybox {
   background-color: lightgray;
   border: 1px solid gray;
@@ -19,14 +23,16 @@
   padding-inline: 1rem;
   margin: 10px;
 }
+
 figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
+
 .image {
-  border: 3px solid black;
+  border: 0px solid black;
   display: inline-block;
   height: 300px;
   width: 450px;

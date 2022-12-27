@@ -2,46 +2,38 @@
   border: 2px solid black;
   padding-inline: 10px;
 }
+
 .textStyle {
   color: blue;
 }
+
 .section {
   display: flex;
   gap: 1rem;
 }
+
 .box {
   border: 1px solid black;
 }
-.querybox {
+
+.queryBox {
   background-color: lightgray;
   border: 1px solid gray;
   border-left: 5px solid rgb(21, 161, 247);
   padding-inline: 1rem;
   margin: 10px;
 }
+
 figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
+
 .image {
   border: 3px solid black;
   display: inline-block;
-  height: 300px;
-  width: 450px;
-}
-
-.one {
-  height: 140px;
-  width: 430px;
-}
-
-figcaption {
-  text-align: center;
-}
-
-.two {
-  height: 125px;
-  width: 430px;
+  height: 100px;
+  width: 100px;
 }

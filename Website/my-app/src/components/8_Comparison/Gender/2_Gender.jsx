@@ -1,24 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Additional Queries</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+import React from "react";
+import "./2_gender.css";
 
-  <body>
+function Gender() {
+  return (
     <section>
-      <h1>Query 2:Gender</h1>
+      <h1>Query 2: Gender</h1>
       <div class="Section">
         <div class="Box">
           <div class="QueryBox">
             <p>
               <span class="ApplySpan">SELECT</span> Age, Gender, Education,
-              Marital_Status, Disease<br />
+              Marital_Status, Disease
+              <br />
               <span class="ApplySpan">FROM</span>
-              `plenary-chalice-369413.Incremental_Diversity_Dataset.Original_Microdata_1000_Records_k_3`<br />
+              `plenary-chalice-369413.Incremental_Diversity_Dataset.Original_Microdata_1000_Records_k_3`
+              <br />
               <span class="ApplySpan">WHERE</span> Gender="Male" AND
               Education="Bachelors" <span class="ApplySpan">LIMIT</span> 1000
             </p>
@@ -28,13 +24,15 @@
               <div class="Image">
                 <img
                   class="InsertImage"
-                  src="Compare Gender Original Result.png"
-                  class="one"
+                  src={require("../images/Gender/Compare Gender Original Result.png")}
+                  alt=""
                 />
               </div>
             </div>
 
-            <figcaption class="FigureCaption">Fig1:Original Dataset</figcaption>
+            <figcaption class="FigureCaption">
+              Fig 1: Original Dataset
+            </figcaption>
           </figure>
         </div>
 
@@ -42,9 +40,11 @@
           <div class="QueryBox">
             <p>
               <span class="ApplySpan">SELECT</span> Lower_Age, Upper_Age,
-              Gender, Education, Marital_Status, Disease<br />
-              <span class="ApplySpan">FROM</span
-              >`plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Microdata_1000_Records_k_3_v2`<br />
+              Gender, Education, Marital_Status, Disease
+              <br />
+              <span class="ApplySpan">FROM</span>
+              `plenary-chalice-369413.Incremental_Diversity_Dataset.Masked_Microdata_1000_Records_k_3_v2`
+              <br />
               <span class="ApplySpan">WHERE</span> Education="Bachelors"
               <span class="ApplySpan"> LIMIT</span> 1000
             </p>
@@ -54,12 +54,12 @@
               <div class="Image">
                 <img
                   class="InsertImage"
-                  src="Compare Gender Masked Result.png"
+                  src={require("../images/Gender/Compare Gender Masked Result.png")}
                   alt=""
                 />
               </div>
             </div>
-            <figcaption class="FigureCaption">Fig2:Masked Dataset</figcaption>
+            <figcaption class="FigureCaption">Fig 2: Masked Dataset</figcaption>
           </figure>
         </div>
       </div>
@@ -72,5 +72,7 @@
         animi!
       </p>
     </section>
-  </body>
-</html>
+  );
+}
+
+export default Gender;

@@ -22,6 +22,9 @@ function TitleNavBar() {
           <Nav.Link className="NavLink" href="#fileupload">
             File Upload
           </Nav.Link>
+          <Nav.Link className="NavLink" href="#comparison">
+            Comparison
+          </Nav.Link>
           <Nav.Link className="NavLink" href="#about">
             About
           </Nav.Link>
