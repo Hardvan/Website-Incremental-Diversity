@@ -4,7 +4,7 @@ import "./2_gender.css";
 function Gender() {
   return (
     <section>
-      <h1>Query 2: Gender</h1>
+      <h1 className="CardTitle">Query 2: Gender</h1>
       <div class="Section">
         <div class="Box">
           <div class="QueryBox">
@@ -63,13 +63,19 @@ function Gender() {
           </figure>
         </div>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic ad,
-        dicta inventore iure amet perspiciatis labore, cupiditate veritatis
-        excepturi quos optio odio ab aliquam repellat vero. Excepturi similique
-        in, asperiores autem quisquam vel eos omnis necessitatibus libero sunt
-        quae cumque aperiam saepe molestias natus. Eos reprehenderit maxime odit
-        animi!
+      <p style={{ "text-align": "justify" }}>
+        The Result of the Query for the Origianl Dataset consisting of
+        Age,Gender,Marital Status,Education,Disease is compared with the result
+        of the Query for Masked Microdata consisting of Upper Age,Lower Age(Age
+        is generalized in this case as shown in Fig 2.),Gender,Marital
+        Status,Education,Disease.The Comparison shows that the Original Dataset
+        has less records as query results,Masked Microdata has more records due
+        to more generalization done.In Fig1.,the query executed for the Original
+        Dataset where Gender="Male"and Education="Bachelors"showed 117 records
+        whereas,the query that has been executed for the Masked Microdata with
+        gender generalized to M/F has 166 records(Fig 2.) which is more than the
+        records of the Original Dataset.Generalization has increased the number
+        of records in order to preserve the privacy of the data.
       </p>
     </section>
   );

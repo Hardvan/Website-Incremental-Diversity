@@ -7,6 +7,9 @@ import "./comparison.css";
 function Comparison() {
   return (
     <div className="Comparison" id="comparison">
+      <h2 className="SectionTitle" id="FileUploadTitle">
+        Comparisons
+      </h2>
       <Age />
       <Gender />
       <ZipCode />

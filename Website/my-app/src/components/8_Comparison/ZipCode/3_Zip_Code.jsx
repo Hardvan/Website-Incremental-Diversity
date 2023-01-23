@@ -4,7 +4,7 @@ import "./3_zip_code.css";
 function ZipCode() {
   return (
     <section class="queries">
-      <h1>Query 3: Zip_Code</h1>
+      <h1 className="CardTitle">Query 3: Zip_Code</h1>
       <div class="section">
         <div class="box">
           <div class="querybox">
@@ -59,13 +59,15 @@ function ZipCode() {
           </figure>
         </div>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic ad,
-        dicta inventore iure amet perspiciatis labore, cupiditate veritatis
-        excepturi quos optio odio ab aliquam repellat vero. Excepturi similique
-        in, asperiores autem quisquam vel eos omnis necessitatibus libero sunt
-        quae cumque aperiam saepe molestias natus. Eos reprehenderit maxime odit
-        animi!
+      <p style={{ "text-align": "justify" }}>
+        Here, comparision of query results for Original Dataset and Masked
+        Microdata is done with respect to zipcode. Similar to the comparision of
+        results of queries with repect to gender and age , the number of records
+        in Original Dataset is less than the number of records in Masked
+        Microdata. In Fig. 1, the query executed for the Original Dataset where
+        Zip_Code = 51618 showed only 1 record whereas the query executed for the
+        Masked Microdata where Zip_Code is generalised as 51*** showed 9
+        records. This is because of generalisation in Masked Microdata.
       </p>
     </section>
   );

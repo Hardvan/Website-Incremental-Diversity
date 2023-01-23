@@ -4,7 +4,7 @@ import "./1_age.css";
 function Age() {
   return (
     <div class="queries">
-      <h1>Query 1: Age</h1>
+      <h1 className="CardTitle">Query 1: Age</h1>
       <div class="section">
         <div class="box">
           <div class="queryBox">
@@ -63,13 +63,18 @@ function Age() {
           </figure>
         </div>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic ad,
-        dicta inventore iure amet perspiciatis labore, cupiditate veritatis
-        excepturi quos optio odio ab aliquam repellat vero. Excepturi similique
-        in, asperiores autem quisquam vel eos omnis necessitatibus libero sunt
-        quae cumque aperiam saepe molestias natus. Eos reprehenderit maxime odit
-        animi!
+      <p style={{ "text-align": "justify" }}>
+        The Comparison of the Results obtained from the Original Dataset Query
+        and the Masked Microdata Query (Age is Generalised) is done here. The
+        Comparison reveals that the number of records in the Original Dataset is
+        significantly lower than the number of records obtained from the Masked
+        Microdata because more generalisations are made there. In Fig. 1, the
+        query executed for the Original Dataset where Age = 35 showed only 28
+        records, whereas the query executed for the Masked Microdata where Age
+        is generalised between 30 and 40 showed 80 records (Fig. 2), which is
+        much more than the Original Dataset. The Generalisation of Age has
+        increased the number of records in order to preserve the privacy of
+        data.
       </p>
     </div>
   );

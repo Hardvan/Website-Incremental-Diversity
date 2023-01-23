@@ -49,9 +49,7 @@ function FileUpload() {
           <Card.Title className="CardTitle">
             Guidelines for the dataset:
           </Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
-            (to be filled)
-          </Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted">Criteria</Card.Subtitle>
           <Card.Text align="justify" className="CardText">
             <ul className="GuidelinesList">
               <li>
@@ -63,6 +61,10 @@ function FileUpload() {
                 The quasi-identifiers will be either generalised or masked.
               </li>
               <li>The dataset should be in .csv or .xlsx format.</li>
+              <li>
+                The dataset should contain <strong>Disease</strong> sensitive
+                attribute.
+              </li>
             </ul>
           </Card.Text>
 
