@@ -2,6 +2,10 @@
 
 Codebase and Journal Paper Components for Incremental Diversity
 
+## Link to the website
+
+[Incremental Diversity Website](https://hardvan.github.io/Website-Incremental-Diversity/)
+
 ## Original Table Link
 
 [Original_Microdata_Records_1000_k_3](https://storage.googleapis.com/incremental_diversity_dataset/original_microdata_Records_1000_k_3.csv)
